@@ -45,24 +45,6 @@ document.addEventListener('keydown', function(e) {
 });
 
 
-function stopEvent(e) {
-    if (!e) e = window.event;
-    if (e.stopPropagation) {
-        e.stopPropagation();
-    } else {
-        e.cancelBubble = true;
-    }
-}
-
-function cancelEvent(e) {
-    if (!e) e = window.event;
-    if (e.preventDefault) {
-        e.preventDefault();
-    } else {
-        e.returnValue = false;
-    }
-}
-
 /* code for keys animation..... 
 I imagine there is probably a better way of doing this,
 but at this specific point in time, is the only way I managed to make it work.... 
